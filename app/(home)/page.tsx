@@ -1,6 +1,11 @@
 
+
 const  HomePage = () => {
-  return ( <h1 className="bg-500">Home</h1> );
+  return ( 
+      <div>
+        
+      </div>
+  );
 }
 
 export default HomePage
