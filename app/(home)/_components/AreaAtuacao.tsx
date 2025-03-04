@@ -1,10 +1,6 @@
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/_components/ui/accordion";
 import { Button } from "@/app/_components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@radix-ui/react-accordion";
+
 
 const AreaDeAtucao = () => {
   const areaAtucao = [
