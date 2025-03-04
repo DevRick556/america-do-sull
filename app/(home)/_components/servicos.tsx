@@ -1,5 +1,6 @@
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
+import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "@/app/_components/ui/carousel";
 import {
   Dialog,
   DialogContent,
@@ -8,16 +9,19 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/app/_components/ui/dialog";
+import Image from "next/image";
+
+const slideImages = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 
 const Servicos = () => {
   return (
     <div className="space-y-4">
       <Card>
-        <CardContent className="flex justify-between pt-6">
-          <div className="h-[100px] w-[100px] bg-white text-black">
+        <CardContent className="flex justify-between items-center">
+          <div className="mt-4 h-[100px] w-[100px] bg-white text-black">
             serviço 1
           </div>
-          <div className="w-36 space-y-6">
+          <div className="w-32 space-y-6">
             <h4>Serviço 1</h4>
             <Dialog>
               <DialogTrigger asChild>
@@ -28,10 +32,25 @@ const Servicos = () => {
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>Serviço</DialogTitle>
-                  <DialogDescription>
-                    Serviço danad di bom
-                  </DialogDescription>
+                  <DialogDescription>Descrição do Serviço</DialogDescription>
                 </DialogHeader>
+                <Carousel
+                  className="w-full"
+                >
+                  <CarouselContent>
+                    {slideImages.map((item) => (
+                      <Image
+                        key={item}
+                        width={1920}
+                        height={1000}
+                        alt="slide-image"
+                        src={item}
+                      />
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="ml-16" />
+                  <CarouselNext className="mr-16" />
+                </Carousel>
               </DialogContent>
             </Dialog>
           </div>
