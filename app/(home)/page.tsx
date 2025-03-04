@@ -1,5 +1,6 @@
 import AreaDeAtucao from "./_components/AreaAtuacao";
 import BemVindo from "./_components/bem-vindo";
+import Contato from "./_components/contato";
 import Hero from "./_components/hero";
 import Qualidades from "./_components/qualidades";
 import Servicos from "./_components/servicos";
@@ -22,6 +23,9 @@ const HomePage = () => {
       </div>
       <div>
         <AreaDeAtucao/>
+      </div>
+      <div>
+        <Contato/>
       </div>
 
     </div>

@@ -106,24 +106,7 @@ const AreaDeAtucao = () => {
                 )
               })
             }
-            {/* <Accordion type="single" collapsible className="w-full md:flex">
-              <AccordionItem value="item-6">
-                <AccordionTrigger>
-                  < h3 className="underline">oleo e gas</ h3 >
-                </AccordionTrigger>
-                <AccordionContent>
-                  <ul className="mx-auto mt-2 max-w-[300px] list-disc text-left">
-                    <li>Montagem de cluster´s;</li>
-                    <li>Montagem/soldagem de dutos;</li>
-                    <li>Montagem/ soldagem de linhas de gás</li>
-                    <li>Instalação de TIE-INS;</li>
-                    <li>Instalação de Vasos de pressão;</li>
-                    <li>Fabricação e montagem de estrutura metálica;</li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion> */}
-
+         
           </div>
         </div>
       </div>

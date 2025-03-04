@@ -43,7 +43,7 @@ const Header = () => {
           </ul>
           {/* <menuHamburguer /> */}
           {menuCLick &&(
-            <ul className="absolute top-full left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
+            <ul className="absolute top-full z-50 left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
               <li><Link href="/" onClick={() => setClick(false)}>Home</Link></li>
               <li>Área de Atuação</li>
               <li>Sobre</li>
