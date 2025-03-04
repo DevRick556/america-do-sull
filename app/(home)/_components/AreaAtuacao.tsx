@@ -1,6 +1,5 @@
-"use client";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/_components/ui/accordion";
 
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/_components/ui/accordion";
 
 
 const AreaDeAtucao = () => {
@@ -92,7 +91,7 @@ const AreaDeAtucao = () => {
                   <Accordion key={area.title} type="single" collapsible className="w-full md:flex md:justify-center sm:text-le">
                     <AccordionItem value="item-1">
                       <AccordionTrigger>
-                          {area.title}
+                        {area.title}
                       </AccordionTrigger>
                       <AccordionContent>
                         <ul className="list-disc text-left">
@@ -106,7 +105,7 @@ const AreaDeAtucao = () => {
                 )
               })
             }
-         
+
           </div>
         </div>
       </div>

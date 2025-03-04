@@ -19,9 +19,11 @@ const Header = () => {
     <>
       <nav className="flex items-center justify-between bg-gradient-to-r from-violet-600 to-sky-400 text-white p-4 px-10 relative">
         {/* logo aquir */}
+
         <div className="ml-4"><Link href="/">
           <Image src="/logo.png" alt="logo" width={42} height={40}/>
         </Link></div>
+
 
         {/* icone do menu hamburguer */}
         <div className=" md:hidden absolute right-5">
@@ -43,7 +45,7 @@ const Header = () => {
           </ul>
           {/* <menuHamburguer /> */}
           {menuCLick &&(
-            <ul className="absolute top-full z-50 left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
+            <ul className="absolute top-full left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
               <li><Link href="/" onClick={() => setClick(false)}>Home</Link></li>
               <li>Área de Atuação</li>
               <li>Sobre</li>
