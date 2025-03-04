@@ -90,8 +90,8 @@ const AreaDeAtucao = () => {
                 return (
                   <Accordion key={area.title} type="single" collapsible className="w-full md:flex md:justify-center sm:text-le">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger asChild>
-                        <Button>{area.title}</Button>
+                      <AccordionTrigger>
+                        {area.title}
                       </AccordionTrigger>
                       <AccordionContent>
                         <ul className="list-disc text-left">
