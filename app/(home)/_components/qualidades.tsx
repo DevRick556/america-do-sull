@@ -3,7 +3,7 @@ import { BadgeCheckIcon, HandHelpingIcon } from "lucide-react";
 
 const Qualidades = () => {
     return (
-        <div className="grid grid-cols-2 gap-4 p-4">
+        <div className="grid grid-cols-2 gap-4">
             <Card>
                 <CardContent className=" bg-gray-950 flex flex-col items-center text-gray-200 p-6 rounded-xl">
                     <HandHelpingIcon/>
