@@ -11,6 +11,7 @@ import {
 } from "@/app/_components/ui/dialog";
 import Image from "next/image";
 
+
 const slideImages = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 
 const Servicos = () => {
