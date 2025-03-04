@@ -19,9 +19,7 @@ const Header = () => {
     <>
       <nav className="flex items-center justify-between bg-gradient-to-r from-violet-600 to-sky-400 text-white p-4 px-10 relative">
         {/* logo aquir */}
-        <div className="ml-7"><Link href="/">
-          <Image alt="logo-america-do-sul" src="/logo.png" width={42} height={40}/>
-        </Link> </div>
+        <div className="ml-20"><Link href="/">logo</Link> </div>
 
         {/* icone do menu hamburguer */}
         <div className=" md:hidden absolute right-5">
@@ -43,7 +41,7 @@ const Header = () => {
           </ul>
           {/* <menuHamburguer /> */}
           {menuCLick &&(
-            <ul className="absolute top-full left-0 w-full bg-gradient-to-r from-violet-600 to-sky-400 z-50 flex flex-col items-center gap-4 py-4 md:hidden">
+            <ul className="absolute top-full left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
               <li><Link href="/" onClick={() => setClick(false)}>Home</Link></li>
               <li>Área de Atuação</li>
               <li>Sobre</li>

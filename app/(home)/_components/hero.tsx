@@ -22,7 +22,7 @@ const Hero = () => {
         className="w-full"
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.play}
+        onMouseLeave={() => plugin.current.play()}
     >
       <CarouselContent>
         {slideImages.map((item) => (
