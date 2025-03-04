@@ -1,32 +1,31 @@
-
-
 import AreaDeAtucao from "./_components/AreaAtuacao";
 import BemVindo from "./_components/bem-vindo";
 import Hero from "./_components/hero";
 import Qualidades from "./_components/qualidades";
 import Servicos from "./_components/servicos";
 
-const  HomePage = () => {
+const HomePage = () => {
   return (
     <div>
       <Hero />
       {/* sobre */}
-        <div className="gap-4">
-          <BemVindo />
-        </div>
-      <div>
-        <Qualidades/>
+      <div className="gap-4">
+        <BemVindo />
       </div>
       <div>
-        <Servicos/>
+        <Qualidades />
       </div>
-      {/* area de atuação */}
+      <div className="p-4 mt-4 flex gap-3 overflow-x-scroll [&&::-webkit-scrollbar]:hidden">
+        <Servicos />
+        <Servicos />
+        <Servicos />
+      </div>
       <div>
         <AreaDeAtucao/>
       </div>
-    </div> 
-   );
 
-}
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

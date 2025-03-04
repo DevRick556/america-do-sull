@@ -1,8 +1,9 @@
+
+
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "@/app/_components/ui/carousel";
-import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/app/_components/ui/dialog";
-
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@radix-ui/react-dialog";
 import Image from "next/image";
 
 const slideImages = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
@@ -18,8 +19,7 @@ const Servicos = () => {
           <div className="w-32 space-y-6">
             <h4>Serviço 1</h4>
             <Dialog>
-              <DialogTrigger >
-                
+              <DialogTrigger asChild >
                 <Button className="bg-gradient-to-r from-violet-600 to-sky-400">
                   Ver Galeira
                 </Button>
