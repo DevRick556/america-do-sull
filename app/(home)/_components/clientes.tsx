@@ -34,7 +34,7 @@ const Clientes = () => {
     <Carousel className="p-2"
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.play}
+        onMouseLeave={() => plugin.current.play()}
     >
       <CarouselContent>
         {clientesImages.map((cliente, index) => (
