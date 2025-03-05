@@ -4,6 +4,8 @@ import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
+
 // import { AlignJustify } from 'lucide-react';
 
 const Header = () => {
@@ -14,10 +16,11 @@ const Header = () => {
     setClick(!menuCLick)
   }
 
+
   return (
 
     <>
-      <nav className="flex items-center justify-between bg-gradient-to-r from-violet-600 to-sky-400 text-white p-4 px-10 relative">
+      <nav className="flex items-center justify-between bg-gradient-to-r from-violet-600 to-sky-400 text-white p-4 px-10 relative scroll-smooth md:scroll-auto">
         {/* logo aquir */}
 
         <div className="ml-4"><Link href="/">
@@ -36,21 +39,22 @@ const Header = () => {
         <div className="flex items-center cursor-pointer r">
           <ul className=" gap-6 mt-3 md:flex hidden">
             <li><Link href="/">Home</Link></li>
-            <li> Área de Atuação</li>
-            <li>Sobre</li>
-            <li>Serviços</li>
+            <li><Link href="/#sobre">Sobre</Link></li>
+            <li><Link href="/#servicos">Serviços</Link></li>
+            <li><Link href="/#areadeatuacao">Área de Atuação</Link></li>
             <li><Link href="/obras-e-projetos">Obras e Projetos</Link></li>
-            <li>Clientes</li>
+            <li><Link href="/#clientes">Clientes</Link></li>
             <li><Link href="/fale-conosco">Fale Conosco</Link></li>
           </ul>
           {/* <menuHamburguer /> */}
           {menuCLick &&(
-            <ul className="absolute top-full left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
+            <ul className="absolute top-full z-50 left-0 w-full bg-[#028fcc] flex flex-col items-center gap-4 py-4 md:hidden">
               <li><Link href="/" onClick={() => setClick(false)}>Home</Link></li>
-              <li>Área de Atuação</li>
               <li>Sobre</li>
-              <li>Serviços</li>
+              <li><Link href="/#servicos" onClick={() => setClick(false)}>Serviços</Link></li>
+              <li><Link href="/#servicos" onClick={() => setClick(false)}>Area de Atuação</Link></li>
               <li><Link href="/obras-e-projetos" onClick={() => setClick(false)}>Obras e Projetos</Link></li>
+              <li><Link href="/#clientes" onClick={() => setClick(false)}>Clientes</Link></li>
               <li><Link href="/fale-conosco" onClick={() => setClick(false)}>Fale Conosco</Link></li>
             </ul>
           )}

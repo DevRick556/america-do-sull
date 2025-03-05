@@ -20,7 +20,7 @@ const slideImages = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 
 const Servicos = () => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 ">
       <Card>
 
         <CardContent className="flex justify-between items-center">
