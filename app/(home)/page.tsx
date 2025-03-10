@@ -24,11 +24,13 @@ const HomePage = () => {
         <Qualidades/>
       </div>
 
-      <div id="servicos" className="p-4 mt-5 flex gap-5 py-5 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
-      <h2 className="items-center ml-4 font-semibold">Serviços</h2>
-        <Servicos/>
-        <Servicos/>
-        <Servicos/>
+      <div id="servicos" className="mt-5">
+        <h2  className="items-center ml-4 font-semibold">Serviços</h2>
+        <div className="p-4  flex gap-5 py-5 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+          <Servicos/>
+          <Servicos/>
+          <Servicos/>
+        </div>
       </div>
       {/* area de atuação */}
       <div id="areadeatuacao">

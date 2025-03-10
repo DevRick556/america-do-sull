@@ -13,7 +13,6 @@ const Contato = () => {
           <li> Telefone II: 92 98194-3131</li>
           <li>Telefone III: 92 98138-0633</li>
           <li>E-mail: romaster@romaster.com.br</li>
-          <li>ola mundo</li>
         </ul>
       </div>
     </div>

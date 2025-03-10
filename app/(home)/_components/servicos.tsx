@@ -1,16 +1,8 @@
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
-
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "@/app/_components/ui/carousel";
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/app/_components/ui/dialog";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-
-  DialogTitle,
-  DialogTrigger,
-} from "@radix-ui/react-dialog";
 import Image from "next/image";
 
 
@@ -22,9 +14,7 @@ const Servicos = () => {
   return (
     <div className="space-y-4 ">
       <Card>
-
         <CardContent className="flex justify-between items-center">
-
           <div className="mt-4 h-[100px] w-[100px] bg-white text-black">
             serviço 1
           </div>
@@ -36,8 +26,8 @@ const Servicos = () => {
                   Ver Galeira
                 </Button>
               </DialogTrigger>
-              <DialogContent>
 
+              <DialogContent>
                 <DialogTitle>Serviço</DialogTitle>
                 <DialogDescription>Descrição do Serviço</DialogDescription>
                 <Carousel className="w-full">
